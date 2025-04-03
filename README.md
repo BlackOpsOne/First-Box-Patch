@@ -8,7 +8,7 @@ A verifiable and global first box patch.
 - Only gives each weapon once
 - On Der Riese, the Ray Gun is given on the first hit of the second box
 - On the latest version of Plutonium, the patch will display the GSC checksums for verification
-   - These checksums will be different depending on the map as they load different files, but are always the same each map load.
+   - These checksums will be different depending on the map as the game loads different files, but are always the same unless a file is modified.
 
 ## Installing
 1. Go to the `Call of Duty Black Ops/zone/Common` folder

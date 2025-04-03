@@ -95,7 +95,7 @@ get_map_weapons()
 
         // Moon
         case "zombie_moon":
-            return array( "ray_gun_zm", "zombie_black_hole_bomb", "microwavegundw_zm" );
+            return array( "microwavegundw_zm", "zombie_black_hole_bomb" );
 
         // Nacht
         case "zombie_cod5_prototype":

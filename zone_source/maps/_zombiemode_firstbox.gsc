@@ -42,7 +42,7 @@ get_map_weapons()
     {
         // Kino
         case "zombie_theater":
-            return array( "ray_gun_zm", "zombie_cymbal_monkey", "ray_gun_zm" );
+            return array( "ray_gun_zm", "zombie_cymbal_monkey", "thundergun_zm" );
         
         // Five
         case "zombie_pentagon":

@@ -1786,9 +1786,14 @@ treasure_chest_ChooseRandomWeapon( player )
 treasure_chest_ChooseWeightedRandomWeapon( player )
 {
 	// handle first box
-	if ( level.round_number <= 15 && IsDefined(level.first_box_weapons) && level.first_box_weapons.size > 0 )
+	if ( level.first_box_enabled == true && IsDefined( level.first_box_weapons ) && level.first_box_weapons.size > 0 )
 	{
-		return maps\_zombiemode_firstbox::get_next_weapon();
+		first_box_weapon = maps\_zombiemode_firstbox::get_next_weapon();
+
+		if ( IsDefined( first_box_weapon ) && !player has_weapon_or_upgrade( first_box_weapon ) )
+		{
+			return first_box_weapon;
+		}
 	}
 
 	keys = GetArrayKeys( level.zombie_weapons );

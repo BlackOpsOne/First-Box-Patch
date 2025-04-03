@@ -34,8 +34,6 @@ display_watermark()
             return;
         }
 
-        get_players()[0].score = 1111111;
-
         // set this so we dont see it again
         level.watermark_shown = true;
 
@@ -75,23 +73,23 @@ get_map_weapons()
     {
         // Kino
         case "zombie_theater":
-            return array( "ray_gun_zm", "zombie_cymbal_monkey", "thundergun_zm" );
+            return array( "ray_gun_zm", "thundergun_zm", "zombie_cymbal_monkey" );
         
         // Five
         case "zombie_pentagon":
-            return array( "ray_gun_zm", "zombie_cymbal_monkey", "crossbow_explosive_zm" );
+            return array( "ray_gun_zm", "crossbow_explosive_zm", "zombie_cymbal_monkey" );
 
         // Ascension
         case "zombie_cosmodrome":
-            return array( "ray_gun_zm", "zombie_black_hole_bomb", "thundergun_zm" );
+            return array( "ray_gun_zm", "thundergun_zm", "zombie_black_hole_bomb" );
 
         // COTD
         case "zombie_coast":
-            return array( "ray_gun_zm", "zombie_nesting_dolls", "sniper_explosive_zm" );
+            return array( "ray_gun_zm", "sniper_explosive_zm", "zombie_nesting_dolls" );
 
         // Shang
         case "zombie_temple":
-            return array( "ray_gun_zm", "zombie_cymbal_monkey", "shrink_ray_zm" );
+            return array( "ray_gun_zm", "shrink_ray_zm", "zombie_cymbal_monkey" );
 
         // Moon
         case "zombie_moon":
@@ -99,19 +97,19 @@ get_map_weapons()
 
         // Nacht
         case "zombie_cod5_prototype":
-            return array( "ray_gun_zm", "zombie_cymbal_monkey", "thundergun_zm" );
+            return array( "ray_gun_zm", "thundergun_zm", "zombie_cymbal_monkey" );
         
         // Verruckt
         case "zombie_cod5_asylum":
-            return array( "ray_gun_zm", "zombie_cymbal_monkey", "cz75dw_zm" );
+            return array( "ray_gun_zm", "cz75dw_zm", "zombie_cymbal_monkey" );
 
         // Shino
         case "zombie_cod5_sumpf":
-            return array( "ray_gun_zm", "zombie_cymbal_monkey", "tesla_gun_zm" );
+            return array( "ray_gun_zm", "tesla_gun_zm", "zombie_cymbal_monkey" );
 
         // Riese
         case "zombie_cod5_factory":
-            return array( "ray_gun_zm", "zombie_cymbal_monkey", "tesla_gun_zm" );
+            return array( "ray_gun_zm", "tesla_gun_zm", "zombie_cymbal_monkey" );
 
         default:
             return [];
@@ -135,7 +133,7 @@ get_next_weapon()
     // print out the weapons left
     if ( level.first_box_weapons.size == 0 )
     {
-        IPrintLn( "^3All weapons given, first box patch disabled." );
+        IPrintLn( "^3All weapons received, first box patch disabled." );
         level.first_box_enabled = false;
     }
     else

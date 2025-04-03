@@ -152,14 +152,14 @@ get_next_weapon()
     return weapon;
 }
 
-weapon_left_print( message )
+weapon_left_print( text )
 {
     if ( level.print_weapon_left == false )
     {
         return;
     }
 
-    IPrintLn( message );
+    IPrintLn( text );
 
     // stop printing this on riese
     if ( level.script == "zombie_cod5_factory" && level.chest_moves == 0 )

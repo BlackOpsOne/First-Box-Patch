@@ -6,19 +6,34 @@
 init()
 {
     level.first_box_weapons = get_map_weapons();
+    level.watermark_shown = false;
+    level thread maps\_zombiemode_firstbox::display_watermark();
 }
 
-watermark()
+display_watermark()
 {
-    wait 1;
-    IPrintLn("^2First Box Patch v1.0 ^7by ^6Evelyn");
-    
-    // perform the pluto checksums verification
-    wait 5;
-    IPrintLnBold("cg_drawChecksums");
-    SetDvar("cg_drawChecksums", "1");
-    wait 3;
-    SetDvar("cg_drawChecksums", "0");
+    for (;;)
+    {
+        level waittill("start_of_round");
+
+        // we only want to show this once
+        if (level.watermark_shown == true)
+        {
+            return;
+        }
+
+        // set this so we dont see it again
+        level.watermark_shown = true;
+
+        wait 1;
+        IPrintLn("^2First Box Patch v1.0 ^7by ^6Evelyn");
+        
+        // perform the pluto checksums verification
+        wait 5;
+        SetDvar("cg_drawChecksums", "1");
+        wait 3;
+        SetDvar("cg_drawChecksums", "0");
+    }
 }
 
 get_map_weapons()
@@ -59,7 +74,7 @@ get_map_weapons()
 
         // Shino
         case "zombie_cod5_sumpf":
-            return array( "ray_gun_zm", "zombie_cymbal_monkey", "tesla_gun_zm", "cz75dw_zm" );
+            return array( "ray_gun_zm", "zombie_cymbal_monkey", "tesla_gun_zm" );
 
         // Riese
         case "zombie_cod5_factory":

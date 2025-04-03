@@ -1786,7 +1786,7 @@ treasure_chest_ChooseRandomWeapon( player )
 treasure_chest_ChooseWeightedRandomWeapon( player )
 {
 	// handle first box
-	if ( IsDefined(level.first_box_weapons) && level.first_box_weapons.size > 0 )
+	if ( level.round_number <= 15 && IsDefined(level.first_box_weapons) && level.first_box_weapons.size > 0 )
 	{
 		return maps\_zombiemode_firstbox::get_next_weapon();
 	}

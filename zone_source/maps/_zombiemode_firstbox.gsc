@@ -73,43 +73,43 @@ get_map_weapons()
     {
         // Kino
         case "zombie_theater":
-            return array( "ray_gun_zm", "thundergun_zm", "zombie_cymbal_monkey" );
+            return array( "ray_gun_zm", "zombie_cymbal_monkey", "thundergun_zm" );
         
         // Five
         case "zombie_pentagon":
-            return array( "ray_gun_zm", "crossbow_explosive_zm", "zombie_cymbal_monkey" );
+            return array( "ray_gun_zm", "zombie_cymbal_monkey", "crossbow_explosive_zm" );
 
         // Ascension
         case "zombie_cosmodrome":
-            return array( "ray_gun_zm", "thundergun_zm", "zombie_black_hole_bomb" );
+            return array( "ray_gun_zm", "zombie_black_hole_bomb", "thundergun_zm" );
 
         // COTD
         case "zombie_coast":
-            return array( "ray_gun_zm", "sniper_explosive_zm", "zombie_nesting_dolls" );
+            return array( "ray_gun_zm", "zombie_nesting_dolls", "sniper_explosive_zm" );
 
         // Shang
         case "zombie_temple":
-            return array( "ray_gun_zm", "shrink_ray_zm", "zombie_cymbal_monkey" );
+            return array( "ray_gun_zm", "zombie_cymbal_monkey", "shrink_ray_zm" );
 
         // Moon
         case "zombie_moon":
-            return array( "microwavegundw_zm", "zombie_black_hole_bomb" );
+            return array( "zombie_black_hole_bomb", "microwavegundw_zm" );
 
         // Nacht
         case "zombie_cod5_prototype":
-            return array( "ray_gun_zm", "thundergun_zm", "zombie_cymbal_monkey" );
+            return array( "ray_gun_zm", "zombie_cymbal_monkey", "thundergun_zm" );
         
         // Verruckt
         case "zombie_cod5_asylum":
-            return array( "ray_gun_zm", "cz75dw_zm", "zombie_cymbal_monkey" );
+            return array( "ray_gun_zm", "zombie_cymbal_monkey", "cz75dw_zm" );
 
         // Shino
         case "zombie_cod5_sumpf":
-            return array( "ray_gun_zm", "tesla_gun_zm", "zombie_cymbal_monkey" );
+            return array( "ray_gun_zm", "zombie_cymbal_monkey", "tesla_gun_zm" );
 
         // Riese
         case "zombie_cod5_factory":
-            return array( "ray_gun_zm", "tesla_gun_zm", "zombie_cymbal_monkey" );
+            return array( "ray_gun_zm", "zombie_cymbal_monkey", "tesla_gun_zm" );
 
         default:
             return [];

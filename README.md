@@ -19,3 +19,6 @@ A verifiable and global first box patch.
 1. Go to the `Call of Duty Black Ops/zone/Common` folder
 1. Rename `common_zombie_patch.ff` to `common_zombie_patch_firstbox.ff`
 1. Rename `common_zombie_patch_original.ff` to `common_zombie_patch.ff`
+
+## Verifying the patch
+You can compare the checksums shown at the start of the game with [this list](Checksums.md).

@@ -3,7 +3,7 @@ These checksums were generated with the anticheat on Plutonium turned off (lan m
 
 The last checksum line may be different, this is normal.
 
-| Map Name   | Image |
+| Map   | Checksums |
 |------------|-------|
 | Kino Der Toten | ![kino](https://github.com/user-attachments/assets/74839fb1-b400-4900-8355-6a43dc7ed591) |
 | Five | ![five](https://github.com/user-attachments/assets/3a66f55f-36b8-4c95-b3e1-fe305c259803) | 

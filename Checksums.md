@@ -1,7 +1,7 @@
 # Version 1.0 Checksums
 These checksums were generated with the anticheat on Plutonium turned off, as well as only the first box patch, no further modification was done.
 
-The bottom checksum may be different, this is normal.
+The last checksum line may be different, this is normal.
 
 | Map Name   | Image |
 |------------|-------|

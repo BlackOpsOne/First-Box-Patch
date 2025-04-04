@@ -1,5 +1,5 @@
 # Version 1.0 Checksums
-These checksums were generated with the anticheat on Plutonium turned off, as well as only the first box patch, no further modification was done.
+These checksums were generated with the anticheat on Plutonium turned off (lan mode), as well as only the first box patch, no further modification was done.
 
 The last checksum line may be different, this is normal.
 
